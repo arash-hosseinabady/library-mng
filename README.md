@@ -237,8 +237,13 @@ You can see code coverage output under the `tests/_output` directory.
 for install vendor in project run: `composer install`
 #### database
 create `library_mng`  database.
-run migration: `./yii migrate`
+run blow migrations:
+`./yii migrate --migrationPath=vendor/webvimark/module-user-management/migrations/`
+`./yii migrate`
 
+#### Admin panel user:
+username: `superadmin`
+password: `superadmin`
 
 ### API
 #### login
