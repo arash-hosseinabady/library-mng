@@ -49,6 +49,7 @@ return [
 ```
 ### Migrations
 run blow commands:
+
 ```./yii migrate --migrationPath=vendor/webvimark/module-user-management/migrations/```
 ```./yii migrate```
 
@@ -65,7 +66,7 @@ url: `/api/login`
 method: POST
 fields: `username` and `password`
 return:
-```json
+```
 [
   {
     "status": {true or false},
@@ -80,7 +81,7 @@ url: `/api/book`
 method: GET
 header fields: `Authorization => 'Bearer {token}'`
 return:
-```json
+```
 [
   {
     "status": {true or false},
@@ -90,7 +91,7 @@ return:
 ```
 
 or array of books:
-```json
+```
 {
   "status": {true or false},
   "data": [
@@ -112,7 +113,7 @@ method: POST
 header fields: `Authorization => 'Bearer {token}'`
 input fields: `name` and `desc`
 return:
-```json
+```
 [
   {
     "status": {true or false},
@@ -126,7 +127,7 @@ url: `/api/book/{book_id}`
 method: DELETE
 header fields: `Authorization => 'Bearer {token}'`
 return:
-```json
+```
 [
   {
     "status": {true or false},
@@ -142,7 +143,7 @@ method: PUT or PATCH
 header fields: `Authorization => 'Bearer {token}'`
 input fields: `name` or `desc` or both
 return:
-```json
+```
 [
   {
     "status": {true or false},
