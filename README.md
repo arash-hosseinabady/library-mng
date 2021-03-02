@@ -1,4 +1,5 @@
 
+
 ## Library Management
 Simple app that admin can define writers to add, update, delete and get list of own book(s).
 
@@ -48,8 +49,11 @@ return [
 ```
 ### Migrations
 run blow commands:
-`./yii migrate --migrationPath=vendor/webvimark/module-user-management/migrations/`
-`./yii migrate`
+```./yii migrate --migrationPath=vendor/webvimark/module-user-management/migrations/```
+```./yii migrate```
+
+## Run
+run `./yii serve -p {port}`
 
 ## Admin panel user:
 username: `superadmin`
