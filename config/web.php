@@ -44,7 +44,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'api/book/<id:\d+>' => '/api/book'
+                '/' => '/writer',
+                'api/book/<id:\d+>' => '/api/book',
             ],
         ],
         'user' => [
